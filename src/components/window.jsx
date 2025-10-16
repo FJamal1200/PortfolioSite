@@ -174,7 +174,7 @@ export default function Window({ id, onClose }) {
                       "garret.png",
                       "onolaband.png",
                       "turtwig.png",
-                    ].map((f) => ({ src: `/${imagepath}${f}` }))
+                    ].map((f) => ({ src: `${imagePath}${f}` }))
                   );
                   setLightboxIndex(i);
                   setLightboxOpen(true);
