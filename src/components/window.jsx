@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { Rnd } from "react-rnd";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -320,52 +320,66 @@ export default function Window({ id, onClose }) {
   </div>
 ),
 
-    mail: (
-      <div className="flex flex-col items-center text-center space-y-4 text-black">
-        <h2 className="text-lg font-bold">Mail</h2>
-        <p className="text-sm max-w-md">
-          The easiest way to contact me is through email. <br />
-          You can also message me on Instagram and LinkedIn!
-        </p>
+mail: (
+  <div className="flex flex-col items-center text-center space-y-4 text-black">
+    <h2 className="text-lg font-bold">Mail</h2>
 
-        <img
-          src={`${base}/quagsire.png`}
-          alt="Quagsire"
-          className="w-40 h-40 object-cover border border-gray-600"
-        />
+    <p className="text-sm max-w-md">
+      The easiest way to contact me is through email. <br />
+      You can also find me on LinkedIn, GitHub, and Instagram.
+    </p>
 
-        <p className="text-sm">
-          Email me at:{" "}
-          <a
-            href="mailto:farshidjamal2@gmail.com"
-            className="underline text-blue-800"
-          >
-            farshidjamal2@gmail.com
-          </a>
-          <br />
-          or press the icons to see my socials!
-        </p>
+    <img
+      src={`${base}/quagsire.png`}
+      alt="Quagsire"
+      className="w-40 h-40 object-cover border border-gray-600"
+    />
 
-        <div className="flex space-x-6 mt-2 text-2xl">
-          <a
-            href="https://www.instagram.com/fjdesigns8/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-600"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/farshid-jamal/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-700"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
-      </div>
-    ),
+    <p className="text-sm">
+      Email me at:{" "}
+      <a
+        href="mailto:farshidjamal2@gmail.com"
+        className="underline text-blue-800"
+      >
+        farshidjamal2@gmail.com
+      </a>
+      <br />
+      or use the icons below to view my profiles.
+    </p>
+
+    <div className="flex space-x-6 mt-2 text-2xl">
+      <a
+        href="https://www.instagram.com/fjdesigns8/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-pink-600 transition-colors"
+        aria-label="Instagram"
+      >
+        <FaInstagram />
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/farshid-jamal/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-blue-700 transition-colors"
+        aria-label="LinkedIn"
+      >
+        <FaLinkedin />
+      </a>
+
+      <a
+        href="https://github.com/FJamal1200"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-gray-600 transition-colors"
+        aria-label="GitHub"
+      >
+        <FaGithub />
+      </a>
+    </div>
+  </div>
+),
   };
 
   return (
