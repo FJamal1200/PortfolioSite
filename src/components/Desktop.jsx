@@ -24,7 +24,7 @@ export default function Desktop() {
     { id: "mail", label: "Mail", icon: "outlookExpress4.png" },
   ]
 
-  // ⭐ Generate random stars only once
+  //  Generate random stars only once
   useEffect(() => {
     const newStars = Array.from({ length: 40 }).map(() => ({
       top: Math.random() * 40 + "%", // only in top 40% of screen
@@ -53,7 +53,7 @@ export default function Desktop() {
         }}
       />
 
-      {/* ⭐ Pixelated stars */}
+      {/*  Pixelated stars */}
       <div className="absolute inset-0 pointer-events-none">
         {stars.map((star, i) => (
           <div
@@ -71,7 +71,7 @@ export default function Desktop() {
         ))}
       </div>
 
-      {/* 🌆 City Silhouette */}
+      {/*  City Silhouette */}
       <div className="absolute bottom-0 left-0 w-full h-auto overflow-hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function Desktop() {
   </svg>
       </div>
 
-      {/* 💻 Icons and windows */}
+      {/*  Icons and windows */}
       <div className="relative z-10 p-6 grid grid-cols-2 gap-6 w-32 text-white">
         {icons.map(({ id, label, icon }) => (
           <Icon

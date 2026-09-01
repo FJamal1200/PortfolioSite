@@ -57,22 +57,21 @@ export default function Window({ id, onClose }) {
         {/* Education */}
         <div>
           <h3 className="text-lg font-bold">Education</h3>
-          <p className="text-sm mt-1">
-            Bachelor of Technology in Graphic Communications Management <br />
-            <span className="text-gray-600 text-xs">2022–2026</span>
-          </p>
-        </div>
 
-        {/* Other Interests */}
-        <div>
-          <h3 className="text-lg font-bold">Other Interests</h3>
-          <ul className="list-disc list-inside text-sm mt-1 space-y-1">
-            <li>Drawing</li>
-            <li>Hiking</li>
-            <li>Lifting</li>
-            <li>Gaming</li>
-          </ul>
-        </div>
+  <p className="text-sm mt-1">
+    Master of Information — University of Toronto <br />
+    <span className="text-gray-600 text-xs">
+      UX Design + Human-Centred Data Science · 2026–2028
+    </span>
+  </p>
+
+  <p className="text-sm mt-3">
+    Bachelor of Technology in Graphic Communications Management <br />
+    <span className="text-gray-600 text-xs">
+      Toronto Metropolitan University · 2022–2026
+    </span>
+  </p>
+</div>
 
         {/* Language Proficiency */}
         <div>
@@ -101,8 +100,12 @@ export default function Window({ id, onClose }) {
         <div>
           <h2 className="text-xl font-semibold mb-2">Development</h2>
           <ul className="list-disc list-inside space-y-1 text-sm">
+            <li>Python</li>
+            <li>C++</li>
+            <li>R</li>
             <li>JavaScript</li>
             <li>HTML & CSS</li>
+            
           </ul>
         </div>
 
