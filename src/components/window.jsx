@@ -10,12 +10,12 @@ export default function Window({ id, onClose }) {
   const imagePath = ``
 
 
-  // 🔦 Lightbox state
+  //  Lightbox state
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const [lightboxSlides, setLightboxSlides] = useState([]);
 
-  // 📝 Content map
+  //  Content map
   const contentMap = {
     about: (
       <div className="space-y-6 text-black">
@@ -28,27 +28,31 @@ export default function Window({ id, onClose }) {
           />
           <div>
             <h2 className="text-xl font-bold">Farshid Jamal</h2>
-            <p className="text-sm">Illustrator, UX Designer, Content Creator</p>
+            <p className="text-sm">Data & Software Developer | UX Designer</p>
           </div>
         </div>
 
         {/* About */}
-        <div>
-          <p className="text-sm">
-            Hi, I’m Farshid, a UX/UI Designer and content creator based in
-            Toronto. I specialize in
-          </p>
-          <ul className="list-disc list-inside text-sm mt-2 space-y-1">
-            <li>User Interface Design</li>
-            <li>User Research</li>
-            <li>Prototyping and Wireframing</li>
-            <li>Design Systems</li>
-            <li>JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>Video/Photo Editing</li>
-            <li>Content Development</li>
-          </ul>
-        </div>
+       <div>
+        <p className="text-sm">
+          Hi, I’m Farshid, a developer and UX designer based in Toronto.
+          I’m interested in data science, machine learning, software
+          development, and building human-centred technology.
+        </p>
+
+        <ul className="list-disc list-inside text-sm mt-2 space-y-1">
+          <li>Python</li>
+          <li>PyTorch & Machine Learning</li>
+          <li>Pandas & Data Analysis</li>
+          <li>SQL</li>
+          <li>JavaScript & React</li>
+          <li>C++</li>
+          <li>HTML & CSS</li>
+          <li>UX/UI Design</li>
+          <li>User Research</li>
+          <li>Prototyping & Wireframing</li>
+        </ul>
+      </div>
 
         {/* Education */}
         <div>
