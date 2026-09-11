@@ -66,23 +66,6 @@ Preview the production build locally:
 npm run preview
 
 
-## Project Structure
-
-
-PortfolioSite/
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-├── index.html
-├── package.json
-└── vite.config.js
-
-
 ## Why I Built It
 
 This site serves as both my portfolio and a small front-end project of its own.
