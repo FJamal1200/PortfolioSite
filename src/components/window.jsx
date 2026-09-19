@@ -156,7 +156,6 @@ export default function Window({ id, onClose }) {
           <h2 className="text-xl font-semibold mb-2">Illustrations</h2>
           <div className="grid grid-cols-4 gap-2">
             {[
-              "comission1.png",
               "couragethecowardlydogcommision.png",
               "eveee.png",
               "patrickandbuucommission.png",
